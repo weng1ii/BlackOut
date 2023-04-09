@@ -27,4 +27,87 @@ html, body {
 .section1 {
   height:100%;
   width:100%;
+  overflow: hidden;
+  position: relative;
+}
+.section1:after {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 1;
+  padding-bottom: 56.25%;
+}
+/*Video at index.html section1 */
+
+.video-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.video h1 {
+  text-align: center;
+  font-size: 5em;
+  font-weight: 700;
+  color: white;
+
+}
+
+#mainVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+#mainVideo {
+  filter: brightness(50%);
+}
+/*landing text  */
+h1 {
+  font-size: 500%;
+  font-weight: 700;
 }
