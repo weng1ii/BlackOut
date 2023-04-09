@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap');
+
+html, body {
+  height:100%;
+  width:100%;
+}
+
+
+.fa-search {
+  color: white;
+}
+.btn-outline-sucess {
+  height: 100%;
+  width: 40px;
+}
+
+.searchblock {
+  text-align: center;
+  height: 100%;
+}
+
+.searchblock button {
+  height: 100%;
+}
+
+
+.section1 {
+  height:100%;
+  width:100%;
+}
