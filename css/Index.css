@@ -5,6 +5,10 @@ html, body {
   width:100%;
 }
 
+body{
+  padding-top: 56px; 
+  margin: 0;
+}
 
 .fa-search {
   color: white;
@@ -23,91 +27,109 @@ html, body {
   height: 100%;
 }
 
-
-.section1 {
-  height:100%;
-  width:100%;
-  overflow: hidden;
-  position: relative;
+.nav-text-size{
+  font-size: 1.2em;
 }
-.section1:after {
-  content: "";
-  display: block;
-  background-color: rgba(0, 0, 0, 0.7);
+.home {
+  background: url("../photoes/bg-first.jpg") no-repeat center center fixed;
+  display:table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.color-overlay{
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+}
+
+.singleCol h1 {
+  font-size: 3rem;
+  color:white;
+}
+
+.text-simp {
+  color: white;
+}
+
+.main-info{
+  display:table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.block-photo {
+  background-image: url("../photoes/bg-first.jpg");
+  overflow: hidden;
+}
+
+.size-img{
+  display: block;
   width: 100%;
   height: 100%;
 }
 
-.video {
+.logo {
+  background: none;
+  
+}
+
+.title-enter{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.position-right{
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  z-index: 1;
-  padding-bottom: 56.25%;
-}
-/*Video at index.html section1 */
-
-.video-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-}
-
-.video h1 {
-  text-align: center;
-  font-size: 5em;
-  font-weight: 700;
-  color: white;
-
-}
-
-#mainVideo {
-  position: absolute;
   right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+}
+.text-center{
+  text-align: center;
+}
+.search-nav-enter{
+  height: 1px;
+  min-width: 30px;
+  max-width: 60px;
+}
+.small-enter{
+  min-width: 20px;
+  max-width: 60px;
+}
+.card{
+  width: 80%;
+  height: 20%;
+  margin: auto;
+  padding: 5%;
+  margin-top: 60px;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: auto;
+  max-height: auto;
+}
+.padding{
+  padding: 50px;
+}
+.small-padding {
+  padding: 25px;
+}
+.bg-info{
+  /*background-image: url("");*/
+  background-color: #A2FAD2;
+}
+.nav-color{
+  background-color: #1D9BD1;
 }
 
-/* Add some content at the bottom of the video/page */
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
+.videogen {
+  width: 40%;
+  height: 40%;
 }
-
-/* Style the button used to pause/play the video */
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-
-#mainVideo {
-  filter: brightness(50%);
-}
-/*landing text  */
-h1 {
-  font-size: 500%;
-  font-weight: 700;
+.videomove {
+  text-align: center;
+  margin: auto;
 }
