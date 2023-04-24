@@ -4,132 +4,45 @@ html, body {
   height:100%;
   width:100%;
 }
-
-body{
-  padding-top: 56px; 
-  margin: 0;
-}
-
-.fa-search {
-  color: white;
-}
-.btn-outline-sucess {
-  height: 100%;
-  width: 40px;
-}
-
-.searchblock {
-  text-align: center;
-  height: 100%;
-}
-
-.searchblock button {
-  height: 100%;
-}
-
-.nav-text-size{
-  font-size: 1.2em;
-}
-.home {
-  background: url("../photoes/bg-first.jpg") no-repeat center center fixed;
-  display:table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-}
-
-.color-overlay{
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  width: 100%;
-}
-
-.singleCol h1 {
-  font-size: 3rem;
-  color:white;
-}
-
-.text-simp {
-  color: white;
-}
-
-.main-info{
-  display:table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-}
-
-.block-photo {
-  background-image: url("../photoes/bg-first.jpg");
-  overflow: hidden;
-}
-
-.size-img{
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
 .logo {
   background: none;
-  
+}
+.navbar .navbar-nav .nav-item:hover{
+  background-color: #42A5F5;
+  color: #0d6efd;
 }
 
-.title-enter{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
 }
-.position-right{
-  position: relative;
+
+.navbar .navbar-nav .nav-item {
+  padding: 1em;
+  transition: all .5s;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-brand {
+    padding-left: .7em;
+  }
+}
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));  
 }
-.text-center{
-  text-align: center;
-}
-.search-nav-enter{
-  height: 1px;
-  min-width: 30px;
-  max-width: 60px;
-}
-.small-enter{
-  min-width: 20px;
-  max-width: 60px;
-}
-.card{
-  width: 80%;
-  height: 20%;
-  margin: auto;
-  padding: 5%;
-  margin-top: 60px;
-  border-radius: 15px;
-  overflow: hidden;
-  max-width: auto;
-  max-height: auto;
-}
-.padding{
-  padding: 50px;
-}
-.small-padding {
-  padding: 25px;
-}
-.bg-info{
-  /*background-image: url("");*/
-  background-color: #A2FAD2;
-}
-.nav-color{
-  background-color: #1D9BD1;
-}
-
-.videogen {
-  width: 40%;
-  height: 40%;
-}
-.videomove {
-  text-align: center;
-  margin: auto;
+.carousel-size {
+  max-height: 950px;
 }
