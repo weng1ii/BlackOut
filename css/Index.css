@@ -46,3 +46,6 @@ html, body {
 .carousel-size {
   max-height: 950px;
 }
+.fix-video-size {
+  padding: 0 10% 0 10%;
+}
